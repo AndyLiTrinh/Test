@@ -98,15 +98,14 @@ h3{
   transform: translate(0%, 1000%);
 }
 
-/* Product Section */
-.imageHats{
-    position: relative;
-    float: left;
-    display: inline-flex;
-    height: 200px;
-    width: 200px;
+.column {
+  float: left;
+  width: 32%;
+  padding: 12.6px;
 }
-.products{
-    float:left;
-    font-size: 30px;
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
