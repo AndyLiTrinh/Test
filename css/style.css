@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+
 body {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
 .logo{
@@ -34,6 +37,7 @@ li a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 7px;
+    font-family: 'Montserrat', sans-serif;
   }
 
 li a:hover {
@@ -58,10 +62,11 @@ li a:hover {
   padding: 8px 9px;
   margin-top: 13px;
   margin-right: 16px;
-  background: #ddd;
+  background: dimgray;
   font-size: 17px;
   border: none;
   cursor: pointer;
+  color: rgb(150, 148, 148);
 }
   
 .nav .search-container button:hover {
@@ -70,12 +75,13 @@ li a:hover {
 
 /* Hero Image */
 .heroLouie {
-  background-image: url("https://lightwallpapers.com/media/600x600/0-121.jpg");
+  background-image: url(/images/HeroLouie2.jpg);
   background-color: #cccccc;
   height: 50%; 
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
+  
 }
 
 .heroText {
@@ -83,8 +89,10 @@ li a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 50px;
+  transform: translate(50%, -155%);
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .blankSpace{
@@ -100,7 +108,7 @@ h3{
 
 /* Product aligning */
 .products a {
-  margin-left: 215px; 
+  margin-left: 50px; 
   float: left;
   text-align: center;
   overflow: auto; 
@@ -111,9 +119,40 @@ h3{
   border:2px solid white;  
 }
 
-footer{
+section p {
+  text-align: center;
+  transform: translate(0%, 0%)
+}
+
+.blankSpace2{
+  float: left;
   width: 100%;
-  height: 1000px;
-  bottom: 0;
-  background-color:dimgray;
+  height: 300px;
+}
+
+.catRunway{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,900px);
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 250px;   
+}
+
+#footer {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100px;           
+  background-color: dimgray;
+}
+
+.socialMedia{
+  text-align: right;
 }
