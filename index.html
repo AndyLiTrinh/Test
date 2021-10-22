@@ -4,12 +4,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/f55494bf1f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+    <script type="text/javascript">
+      var egg = new Egg();
+      egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+        jQuery('#egggif').fadeIn(500, function() {
+          window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+        });
+      }, "konami-code");
+      egg.addHook(function(){
+        console.log("Hook called for: " + this.activeEgg.keys);
+        console.log(this.activeEgg.metadata);
+      });
+      egg.listen();
+    </script>
     <title>Louie Glutton</title>
-
+    
 </head>
 
 <body>
+  <style type="text/css">
+    #egggif {position: absolute; top: 12%; left: 28%; display: none; }
+  </style>
+<img id="egggif" src="https://assets.vogue.com/photos/58911f7bb482c0ea0e4d61d4/master/w_1600,c_limit/zoolander-beauty-rules-blue-steel.gif"/>
   <div id="pageContainer">
   <div id="content-wrap">  
     <div class="nav">
@@ -50,23 +69,25 @@
     <!-- Products -->
     <div class="products">
       <a href=#>
-          <img src="/images/LouieHero.png" alt="Cat in Hat">
+        <div class="leftAlign">
+          <img src="/images/cathat.jpg" alt="Cat in Hat">
           <h4>HATS</h4>
+        </div>  
       </a>
           <a href=#>
-            <img src="/images/LouieHero.png" alt="Cat in Jacket">
-              <h5>JACKET</h5>
-          </a>
+            <img src="/images/catjacket.png" alt="Cat in Jacket">
+              <h4>JACKETS</h4>
+      </a>
          
-              <a href=#>
-                <img src="/images/LouieHero.png" alt="Cat in Collar">
-                  <h6>COLLARS</h6>
-              </a>
+      <a href=#>
+          <img src="/images/catcollar.jpg" alt="Cat in Collar">
+              <h4>COLLARS</h4>
+      </a>
 
-                <a href=#>
-                <img src="/images/LouieHero.png" alt="Cat in accessories">
-                  <h6>ACCESSORIES</h6>
-                </a>
+      <a href=#>
+          <img src="/images/cataccessory.png" alt="Cat in accessories">
+                <h4>ACCESSORIES</h4>
+      </a>
 </div>
 </section>
 

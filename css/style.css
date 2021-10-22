@@ -106,17 +106,28 @@ h3{
   transform: translate(0%, 1000%);
 }
 
-/* Product aligning */
+
+
+.leftAlign{
+  margin-left: 300px; /* Product aligning */
+}
+
 .products a {
-  margin-left: 50px; 
+  margin-left: 100px; 
   float: left;
   text-align: center;
   overflow: auto; 
+  margin-top: 25px;
 }
 
 .products a img {
   width: 200px;
   border:2px solid white;  
+}
+
+h4{
+  font-size: 20px;
+  text-decoration: none;
 }
 
 section p {
@@ -155,4 +166,10 @@ section p {
 
 .socialMedia{
   text-align: right;
+  margin-top: 10px;
+}
+
+.fa-facebook-square, .fa-instagram, .fa-snapchat-square, .fa-twitter-square{
+  color: #fff;
+  margin: 10px;
 }
