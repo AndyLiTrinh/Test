@@ -106,8 +106,6 @@ h3{
   transform: translate(0%, 1000%);
 }
 
-
-
 .leftAlign{
   margin-left: 300px; /* Product aligning */
 }
@@ -126,9 +124,19 @@ h3{
 }
 
 h4{
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
 }
+
+ .products a:visited { 
+  text-decoration: none; 
+  color: #000; 
+ }
+
+ .products a:link { 
+  text-decoration: none; 
+  color: #000; 
+ }
 
 section p {
   text-align: center;
